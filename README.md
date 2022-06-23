@@ -4,6 +4,10 @@
 ECG Database를 Spectrogram으로 변환하여 2D CNN에 넣어 Classification을 진행하는 모델이다. 모델의 구조나 전처리 방법을 참고하여 진행하였다. 본 프로젝트는 [ECG Arrythmia classification using 2D CNN with 2D Image](https://github.com/insung3511/2d_cnn_ecg) 와 동시에 진행되는 프로젝트이다. 빠른 진행을 위해 Tensorflow을 활용하는 중이다.
 
 ## 전처리 방식
+- Data Download link 
+    - mit_data.zip [MIT data directory download link](https://drive.google.com/file/d/1Hm9ZHp1s6h_JEYHIMH_4bQUWLCf67-F4/view?usp=sharing)
+    - spectrogram_zip [Spectrogram Graph image download link](https://drive.google.com/file/d/1Lv42peuj7lKCp2z8AVjA5IdF3y7SVjfM/view?usp=sharing)
+
 STFT 를 이용해 Spectrogram 을 만들어줘야 하기 때문에 전처리 과정은 필수이다. 다만 논문에서는 10초 단위로 나뉘어 전처리를 해주었지만 해당 코드는 비트별로 전처리를 한다. 논문에서 제시한 전체적인 흐름은 다음과 같다. 
 ![Mdoel whole phase](https://ieeexplore.ieee.org/ielx7/6287639/8600701/8759878/graphical_abstract/access-gagraphic-2928017.jpg)
 
