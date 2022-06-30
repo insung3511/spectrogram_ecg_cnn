@@ -64,7 +64,7 @@ X = np.array(X)
 y = np.array(y)
 
 for cnt in tqdm(range(len(X))):
-    fig = plt.figure(figsize=[10, 10])
+    fig = plt.figure(figsize=[2, 2])
     plt.interactive(False)
     
     ax = fig.add_subplot(111)
