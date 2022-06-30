@@ -1,4 +1,4 @@
-from __future__ import annotations
+# from __future__ import annotations
 import matplotlib.pyplot as plt
 from tqdm import tqdm 
 import numpy as np
@@ -98,8 +98,7 @@ for cnt in tqdm(range(len(X))):
         createDirectory(PATH + "Q/")
         SAVE_PATH = PATH + "Q/" + str(cnt) + "Q_" + ".png"
 
+    plt.tight_layout()
     plt.savefig(SAVE_PATH)
     plt.clf()
     plt.close()
-
-plt.show()
