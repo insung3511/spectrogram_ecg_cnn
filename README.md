@@ -18,3 +18,26 @@ STFT 를 이용해 Spectrogram 을 만들어줘야 하기 때문에 전처리 �
 ![Model architecture](https://ieeexplore.ieee.org/mediastore_new/IEEE/content/media/6287639/8600701/8759878/huang4-2928017-large.gif)
 
 논문에서도 총 5개의 클래스로 분류하기 떼문에 해당 논문에서 크게 다른 점이라면 전처리 과정 외에는 아직 큰 변화가 없을 것으로 예상된다.
+
+# Reuslt
+## Accuracy & Loss
+![Train and Validation Accuracy](./docs/fig1.png)
+![Train and Validation Loss](./docs/fig2.png)
+
+## Confusion Matrix
+![Confusion Matrix as count](./docs/fig3.png)
+![Confusion Matrix as ratio](./docs/fig4.png)
+
+```
+              precision    recall  f1-score   support
+
+       0 = N       0.99      0.99      0.99     20059
+       1 = S       0.94      0.87      0.91       610
+       2 = V       0.96      0.95      0.95      1553
+       3 = F       0.85      0.68      0.76       182
+       4 = Q       0.98      0.98      0.98      2491
+
+    accuracy                           0.99     24895
+   macro avg       0.94      0.90      0.92     24895
+weighted avg       0.98      0.99      0.99     24895
+```
