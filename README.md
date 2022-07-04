@@ -41,3 +41,30 @@ STFT 를 이용해 Spectrogram 을 만들어줘야 하기 때문에 전처리 �
    macro avg       0.94      0.90      0.92     24895
 weighted avg       0.98      0.99      0.99     24895
 ```
+
+# Result
+해당 결과는 Spectrogram을 넣었던 모델에 Raw graph Image를 입력으로 넣은 결과 값이다.
+
+## Accuracy & Loss
+
+![Train and Validation Accuracy](./docs/fig5.png)
+![Train and Validation Loss](./docs/fig6.png)
+
+## Confusion Matrix
+
+![Confusion Matrix as count](./docs/fig7.png)
+![Confusion Matrix as ratio](./docs/fig8.png)
+
+```
+             precision    recall  f1-score   support
+
+       0 = N       0.99      1.00      0.99     20059
+       1 = S       0.93      0.87      0.90       610
+       2 = V       0.96      0.95      0.95      1553
+       3 = F       0.88      0.82      0.85       182
+       4 = Q       0.99      0.97      0.98      2491
+
+    accuracy                           0.99     24895
+   macro avg       0.95      0.92      0.93     24895
+weighted avg       0.99      0.99      0.99     24895
+```
